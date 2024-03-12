@@ -1,0 +1,56 @@
+.folder, .file {
+    margin-left: 20px;
+}
+
+.folder::before, .file::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: cover;
+}
+
+.folder::before {
+    background-image: url('folder-icon.png');
+}
+
+.file::before {
+    background-image: url('file-icon.png');
+}
+
+.btn{
+    margin: 1rem;
+}
+
+/* Style the tree view */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  li {
+    margin: 4px 0 0 18px;
+    padding: 2px 0 0 18px;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+    
+  }
+  
+  /* Hide nested content by default */
+  .nested {
+    display: none;
+    
+  }
+  
+  /* Show active (clicked) caret */
+  .caret.active {
+    color: white;
+    transform: rotate(90deg);
+    background-color: #c71e00;
+    border-radius: 5px;
+    padding: 2px 8px;
+  }
+  
